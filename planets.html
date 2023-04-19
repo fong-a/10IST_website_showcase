@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Solar System: Planets</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Lalezar&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Sono&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <svg width="80" height="80" viewBox="-40 -40 80 80">
+          <circle fill="#7deb7d" r="8"/>
+          <circle fill="transparent" stroke="#7deb7d" r="15"/>
+          <circle fill="transparent" stroke="#7deb7d" r="25"/>
+          <circle fill="transparent" stroke="#7deb7d" r="35"/>
+          <g>
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" dur="2s" repeatCount="indefinite"/>            
+            <g transform="translate(0, 15)">
+              <circle fill="#7deb7d" r="4"/>
+            </g>
+          </g>
+          <g>
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="360" dur="3s" repeatCount="indefinite"/>            
+            <g transform="translate(0, 25)">
+              <circle fill="#7deb7d" r="4"/>
+            </g>
+          </g>
+          <g>
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" dur="1.5s" repeatCount="indefinite"/>            
+            <g transform="translate(0, 35)">
+              <circle fill="#7deb7d" r="4"/>
+            </g>
+          </g>
+        </svg>
+        <h1><a class="title" href="index.html">The Solar System</a></h1>
+      </header>
+      <div class="main">
+        <div class="menu">
+          <links>
+            <a href="history.html" class="link_menu"><img src="images/history_symbol.svg"> History</a>
+            <br>
+            <a class="link_menu_open"><img src="images/planet_symbol.svg"> Planets</a>
+            <br>
+            <a href="satellites.html" class="link_menu"><img src="images/satellites_symbol.svg"> Satellites</a>
+            <br>
+            <a href="missions.html" class="link_menu"><img src="images/moons_symbol.svg"> Missions</a>
+            <br>
+            <a href="quiz.html" class="link_menu"><img src="images/quiz_symbol.svg"> Quiz</a>
+          </links>
+        </div>
+        <div class="content">
+          <h2>Planets and Celestial Objects</h2>
+          <p>The Solar System contains 8 planets, with 4 inner planets and 5 outer planets.<br>
+            There are also many other celestial objects such as asteroids, moons, and of course, the Sun.<br>
+            Click an object to learn more!</p>
+          <div class="planet_info_holder">
+            <button onclick="showInfo('sun_info')" class="planet_select"><img src="images/sun_icon.svg" id="sun"></button>
+            <div class="info" id="sun_info" style="display: none;">
+              <img src="images/sun.png">
+              <h3>The Sun</h3>
+              <p>Radius: 696,000 km<br>
+              Equator Circumference: 4.379,000km<br>
+              Surface Temperature: 5600°C<br>
+              Length of Day(Time taken to rotate on axis): 27 Earth Days
+              Moons: 0<br>- - - - - - - - - -<br>
+              The Sun is the center of our Solar System. In fact, the Solar System is defined as everything that orbits around our Sun, hence the name "Solar" System.
+              </p>
+            </div>
+          </div>
+
+          <br>
+
+          <p>The Inner Planets ("Terrestrial" Planets)</p>
+
+          <br>
+
+          <div class="planet_info_holder">
+            <button onclick="showInfo('mercury_info')" class="planet_select"><img src="images/mercury_icon.svg" id="mercury"></button>
+            <div class="info" id="mercury_info" style="display: none;">
+              <img src="images/mercury.jpg">
+              <h3>Mercury</h3>
+              <p>Radius: 2,439.7 km<br>
+              Equator Circumference: 15,329 km<br>
+              Surface Temperature: -180°C (night) to 430°C (day)<br>
+              Length of Day(Time taken to rotate on axis): 176 Earth Days<br>
+              Length of Year(Time taken to orbit the Sun): 88 Earth Days
+              Moons: 0<br>- - - - - - - - - -<br>
+              Mercury does not have an an atmosphere, meaning that it cannot trap heat on its surface. This means that at night the temperature can drop rapidly to below freezing tmeperatures.
+              </p>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="planet_info_holder">
+            <button onclick="showInfo('venus_info')" class="planet_select"><img src="images/venus_icon.svg" id="venus"></button>
+            <div class="info" id="venus_info" style="display: none;">
+              <img src="images/venus_planet.jpg">
+              <h3>Venus</h3>
+              <p>Radius: 6,051.8 km<br>
+              Equator Circumference: 38,025 km<br>
+              Surface Temperature: ~475°C<br>
+              Length of Day(Time taken to rotate on axis): 243 Earth Days<br>
+              Length of Year(Time taken to orbit the Sun): 225 Earth Days
+              Moons: 0<br>- - - - - - - - - -<br>
+              Despite being the second planet from the Sun, Venus has the hottest temperature of any of the planets. This is due to its extremely thick atmosphere that is about 100 times bigger than Earth's.
+              </p>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="planet_info_holder">
+            <button onclick="showInfo('earth_info')" class="planet_select"><img src="images/earth_icon.svg" id="earth"></button>
+            <div class="info" id="earth_info" style="display: none;">
+              <img src="images/earth.png">
+              <h3>Earth</h3>
+              <p>Radius: 6,378 km<br>
+              Equator Circumference: 40,075 km<br>
+              Surface Temperature: ~15°C<br>
+              Length of Day(Time taken to rotate on axis): 1 Earth Day (23.9 hours)<br>
+              Length of Year(Time taken to orbit the Sun): 365 Earth Days
+              Moons: 1<br>- - - - - - - - - -<br>
+              You probably live on this planet. Although a day is classified as 24 hours, the sidreal day, or the time it takes it to roatae on its axis in comparis to the stars, is 23 Hours 56 minutes. However, because the Earth orbits the Sun, the day that is commonly used is a rotation in comparison to the Sun, which is 24 hours.
+              </p>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="planet_info_holder">
+            <button onclick="showInfo('mars_info')" class="planet_select"><img src="images/mars_icon.svg" id="mars"></button>
+            <div class="info" id="mars_info" style="display: none;">
+              <img src="images/mars.jpg">
+              <h3>Mars</h3>
+              <p>Radius: 3,390 kilometers<br>
+              Equator Circumference: 21,344 km<br>
+              Surface Temperature: -65°C<br>
+              Length of Day(Time taken to rotate on axis): 24.6 Earth Hours<br>
+              Length of Year(Time taken to orbit the Sun): 687 Earth days<br>
+              Moons:<br>- - - - - - - - - -<br>
+              Due to Mars' large, solid core, it is believed that Mars could have once contained life. However, it is very likely that any life that used to be on Mars is now extinct as the core's temperature has cooled greatly over time, weakening the atmosphere.
+              </p>
+            </div>
+          </div>
+
+          <br>
+
+          <p>The Outer Planets ("Gas Giants")</p>
+
+          <br>
+
+          <div class="planet_info_holder">
+            <button onclick="showInfo('jupiter_info')" class="planet_select"><img src="images/jupiter_icon.svg" id="jupiter"></button>
+            <div class="info" id="jupiter_info" style="display: none;">
+              <img src="images/jupiter.jpg">
+              <h3>Jupiter</h3>
+              <p>Radius: 69,911 km<br>
+              Equator Circumference: 439,264 km<br>
+              Surface Temperature: -110°C<br>
+              Length of Day(Time taken to rotate on axis): 10 Earth Hours<br>
+              Length of Year(Time taken to orbit the Sun): 	11.86 Earth Years<br>
+              Moons: At least 92<br>- - - - - - - - - -<br>
+              Jupiter is so large that it has its own "small" system, known as the Jovian system. This system contains its many moons as well as rings (which are much fainter than those around Saturn) and asteroids. Jupiter is also famous for its Big Red Spot, which is a massive storm on Jupiter's gaseous "surface".
+              </p>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="planet_info_holder">
+            <button onclick="showInfo('saturn_info')" class="planet_select"><img src="images/saturn_icon.svg" id="saturn"></button>
+            <div class="info" id="saturn_info" style="display: none;">
+              <img src="images/saturn.jpg">
+              <h3>Saturn</h3>
+              <p>Radius: 60,268 km<br>
+              Equator Circumference: 378,675 km<br>
+              Surface Temperature: -140°C<br>
+              Length of Day(Time taken to rotate on axis): 11 Earth Hours<br>
+              Length of Year(Time taken to orbit the Sun): 	29.46 Earth Years<br>
+              Moons: 83<br>- - - - - - - - - -<br>
+              Saturn is famous for its ginormous rings, but it is not alone. In fact, all of the outer 4 planets, also known as the Gas Giants, have rings. Saturn, however, has by far the largest, most dense rings, which is why we can see them much clearer than rings on the other planets.
+              </p>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="planet_info_holder">
+            <button onclick="showInfo('uranus_info')" class="planet_select"><img src="images/uranus_icon.svg" id="uranus"></button>
+            <div class="info" id="uranus_info" style="display: none;">
+              <img src="images/uranus.jpg">
+              <h3>Uranus</h3>
+              <p>Radius: 25,559 km<br>
+              Equator Circumference: 160,590 km<br>
+              Surface Temperature: -195°C<br>
+              Length of Day(Time taken to rotate on axis): 17 Earth Hours<br>
+              Length of Year(Time taken to orbit the Sun): 84 Earth Years<br>
+              Moons: 27<br>- - - - - - - - - -<br>
+              Uranus is the first of the two Ice Giants, the two furthest and therefore coldest planets in the Solar System. Like earth, it is tilted on an angle from its orbit, but Uranus is tilted at a massive 97.77°, probably due to collision with a large earth-sized object a long time ago.
+              </p>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="planet_info_holder">
+            <button onclick="showInfo('neptune_info')" class="planet_select"><img src="images/neptune_icon.svg" id="neptune"></button>
+            <div class="info" id="neptune_info" style="display: none;">
+              <img src="images/neptune.jpg">
+              <h3>Neptune</h3>
+              <p>Radius: 24,764 km<br>
+              Equator Circumference: 154,705 km<br>
+              Surface Temperature: -200°C<br>
+              Length of Day(Time taken to rotate on axis): 16 Earth Hours<br>
+              Length of Year(Time taken to orbit the Sun): 165 Earth Years<br>
+              Moons: 14<br>- - - - - - - - - -<br>
+              Neptune is the densest of the four Gas Giants, and it is made of mostly water, methane, and ammonia- all considered "icy" materials, ence its classification as an Ice Giant. Winds on Neptune can reach up to 2000 km/h. Although Jupiter is the only planet famous for a "big spot", in 1989 there was also a storm on Neptune known as the Great dark Spot, which has since disappeared, but in its prime could have fit the entirety of Earth inside of itself.
+              </p>
+            </div>
+          </div>
+
+          <br>
+
+          <p>These are the 8 planets that humans have discovered. Beyond this,  the only object we know of is Pluto, a dwarf planet. there may be more planets beyond this, but there orbit is so large that we have not yet found them or concluded  that they orbit the Sun.</p>
+
+          <br>
+          <a href="satellites.html"><button class="next">Next Page: Satellites</button></a>
+          <p>Vectors and icons by <a href="https://www.svgrepo.com" target="_blank">SVG Repo</a> <br>
+          Images on this page were sourced from: <br> <a href="https://esahubble.org/images/archive/category/solarsystem">esahubble.org</a> <br> <a href="https://commons.wikimedia.org">commons.wikimedia.org</a></p>
+        </div>
+      </div>
+      <footer>
+        <h4>An Oliver Healey Project</h4>
+      </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

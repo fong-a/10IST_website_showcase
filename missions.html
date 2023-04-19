@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Solar System: Missions</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Lalezar&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Sono&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <svg width="80" height="80" viewBox="-40 -40 80 80">
+          <circle fill="#7deb7d" r="8"/>
+          <circle fill="transparent" stroke="#7deb7d" r="15"/>
+          <circle fill="transparent" stroke="#7deb7d" r="25"/>
+          <circle fill="transparent" stroke="#7deb7d" r="35"/>
+          <g>
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" dur="2s" repeatCount="indefinite"/>            
+            <g transform="translate(0, 15)">
+              <circle fill="#7deb7d" r="4"/>
+            </g>
+          </g>
+          <g>
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="360" dur="3s" repeatCount="indefinite"/>            
+            <g transform="translate(0, 25)">
+              <circle fill="#7deb7d" r="4"/>
+            </g>
+          </g>
+          <g>
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" dur="1.5s" repeatCount="indefinite"/>            
+            <g transform="translate(0, 35)">
+              <circle fill="#7deb7d" r="4"/>
+            </g>
+          </g>
+        </svg>
+        <h1><a class="title" href="index.html">The Solar System</a></h1>
+      </header>
+      <div class="main">
+        <div class="menu">
+
+          <links>
+            <a href="history.html" class="link_menu"><img src="images/history_symbol.svg"> History</a>
+            <br>
+            <a href="planets.html" class="link_menu"><img src="images/planet_symbol.svg"> Planets</a>
+            <br>
+            <a href="satellites.html" class="link_menu"><img src="images/satellites_symbol.svg"> Satellites</a>
+            <br>
+            <a class="link_menu_open"><img src="images/moons_symbol.svg"> Missions</a>
+            <br>
+            <a href="quiz.html" class="link_menu"><img src="images/quiz_symbol.svg"> Quiz</a>
+          </links>
+
+        </div>
+        <div class="content" id="content_scroller_mission">
+          <h2>Space Missions</h2>
+          <p>In our attempts to learn more about our Solar System, many manned and unmanned spacecraft have been sent across the solar system in what is called a "mission". Some of the most influential can be seen below.<br>
+            Click a mission to select it!
+          </p>
+          <br>
+          <div class="mission_grid">
+            <svg width="200" height="200" viewBox="-100 -100 200 200" id="interactive_system">
+              <circle r="6" fill="transparent" stroke="#7deb7d33"/>
+              
+              <circle r="12" fill="transparent" stroke="#7deb7d33"/>
+              
+              <circle r="18" fill="transparent" stroke="#7deb7d33"/>
+              
+              <circle r="24" fill="transparent" stroke="#7deb7d33"/>
+              
+              <circle r="44" fill="transparent" stroke="#7deb7d33"/>
+              
+              <circle r="64" fill="transparent" stroke="#7deb7d33"/>
+              
+              <circle r="84" fill="transparent" stroke="#7deb7d33"/>
+              
+              <circle r="97" fill="transparent" stroke="#7deb7d33"/>
+
+              <circle r="2" fill="yellow" id="sun_interact"/>
+              
+
+              <path class="path" id="voyager1" d="M 0 -18 Q -60 0, 0 64 Q 30 100, 100 80" stroke="orange" fill="transparent"/>
+              <path class="path" id="voyager2" d="M 5 -17 Q -60 0, 10 63 Q 40 80, 100 0" stroke="aqua" fill="transparent"/>
+
+              <path class="path" id="pioneer10" d="M 0 18 Q 40 -34, 20 -43 Q -10 -60, -100 -50" stroke="green" fill="transparent"/>
+              <path class="path" id="pioneer11" d="M 0 18 Q 20 -40, 10 -45 Q -10 -55, -20 0 Q -30 30, 10 63 Q 40 80, 100 40" stroke="pink" fill="transparent"/>
+
+              <path class="path" id="galileo1" d="M 0 -18 C -20 -15, -15 10, 0 12 C 30 15, 25 -20, 0 -22  C -25 -15, -20 10, 0 20 C 30 40, 45 -20, 0 -23 C -50 -15, -30 30, 0 44" stroke="yellow" fill="transparent"/>
+
+              <g>
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" dur="0.88s" repeatCount="indefinite"/>            
+                <g transform="translate(0, 6)">
+                  <circle fill="#7deb7d" r="1" id="mercury_interact"/>
+                </g>
+              </g>
+
+              <g>
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" dur="2.25s" repeatCount="indefinite"/>            
+                <g transform="translate(0, 12)">
+                  <circle fill="#7deb7d" r="1" id="venus_interact"/>
+                </g>
+              </g>
+
+              <g>
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" dur="3.65s" repeatCount="indefinite"/>            
+                <g transform="translate(0, 18)">
+                  <circle fill="white" r="1.5" id="earth_interact"/>
+                </g>
+              </g>
+
+              <g>
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" dur="6.87s" repeatCount="indefinite"/>            
+                <g transform="translate(0, 24)">
+                  <circle fill="#7deb7d" r="1" id="mars_interact"/>
+                </g>
+              </g>
+
+              <g>
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" dur="42.632s" repeatCount="indefinite"/>  
+                <g transform="translate(0, 44)">
+                  <circle fill="#7deb7d" r="1" id="jupiter_interact"/>
+                </g>
+              </g>
+
+              <g>
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" dur="107.529s" repeatCount="indefinite"/>            
+                <g transform="translate(0, 64)">
+                  <circle fill="#7deb7d" r="1" id="saturn_interact"/>
+                </g>
+              </g>
+
+              <g>
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" dur="306.6s" repeatCount="indefinite"/>            
+                <g transform="translate(0, 84)">
+                  <circle fill="#7deb7d" r="1" id="uranus_interact"/>
+                </g>
+              </g>
+
+              <g>
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" dur="602.25s" repeatCount="indefinite"/>            
+                <g transform="translate(0, 97)">
+                  <circle fill="#7deb7d" r="1" id="neptune_interact"/>
+                </g>
+              </g>
+              <text class="svg_text" textLength="16" x="-28" y="-90">Voyager 1/2</text>
+              <text class="svg_text" textLength="16" x="-8" y="-90">Pioneer 10/11</text>
+              <text class="svg_text" textLength="16" x="12" y="-90">Galileo</text>
+
+              <rect class="mission_box" id="voyager" height="8" width="20" fill="#00F1" stroke="#AAA" x="-30" y="-93" onclick="voyager_show()"/>
+              <rect class="mission_box" id="pioneer" height="8" width="20" fill="#00F1" stroke="#AAA" x="-10" y="-93" onclick="pioneer_show()"/>
+              <rect class="mission_box" id="galileo" height="8" width="20" fill="#00F1" stroke="#AAA" x="10" y="-93" onclick="galileo_show()"/>
+              
+              <text textLength="50" x="-25" y="-95" class="svg_text" style="font-size: 4px;">Select a Mission</text>
+              
+            </svg>
+            <div class="mission_info" id="voyager_info"><h2>Voyager</h2><p>
+              <b style="color:orange">Voyager 1 (Orange Path)</b><br>
+              Launch Date: September 5, 1977, 12:56:00 UTC<br>
+              Mission Duration: Ongoing<br>
+              Manufacturer: Jet Propulsion Laboratory<br>
+              Power (at launch): 470 watts<br>
+              Launch Rocket: Titan IIIE<br>
+              ------------------<br>
+              <b style="color:aqua">Voyager 2 (Aqua Path)</b><br>
+              Launch Date: August 20, 1977, 14:29:00 UTC<br>
+              Mission Duration: Ongoing<br>
+              Manufacturer: Jet Propulsion Laboratory<br>
+              Power (at launch): 470 watts<br>
+              Launch Rocket: Titan IIIE<br>
+              ------------------<br>
+              During the early space age, it was noticed that in the late 1970s an alignment of all of the outer planets in relation to earth would occur. This led to the creation  of the Voyager program, and its two spacecraft, Voyager 1 and Voyager 2.
+              These craft were both launched and sent to do a "fly-by", or close pass, of the 4 Gas Giants, especially Jupiter and Saturn, and gather research, mostly through photos. After the completion of this missionin 1989, their mission was changed 
+              to the Voyager Intestallar Mission (VIM), where the spacecraft have been sent off out of the furthest reaches of the Solar System to explore until they eventually lose power or break. They both have a phonograph known as the Gold Record that 
+              when played shows music and sounds from Earth along with greetings in 55 different languages, each with a slightly different meaning.
+            </p></div>
+            <div class="mission_info" id="pioneer_info"><h2>Pioneer</h2><p>
+              <b style="color:green">Pioneer 10 (Green Path)</b><br>
+              Launch Date: March 3, 1972 at 01:49:04 UTC<br>
+              Mission Duration: 30 years, 10 months and 21 days<br>
+              Manufacturer: TRW Inc.<br>
+              Power (at launch): 155 watts<br>
+              Launch Rocket: Atlas SLV-3C Centaur-D Star-37E<br>
+              ------------------<br>
+              <b style="color:pink">Pioneer 11 (Pink Path)</b><br>
+              Launch Date: April 6, 1973, 02:11:00 UTC<br>
+              Mission Duration: 22 years, 7 months and 19 days<br>
+              Manufacturer: TRW Inc.<br>
+              Power (at launch): 155 watts<br>
+              Launch Rocket: 	Atlas SLV-3D Centaur-D1A Star-37E<br>
+              ------------------<br>
+              Pioneer 10 and Pioneer 11 were the two most successful spacecraft of the Pioneer program. Pioneer 10 was the first time a mission was sent to the outer planets, completeing a successful fly-by of Jupiter and becoming the first spacecraft placed
+               on a trajectory to escape the solar system into interstellar space. This was also the first time spacecraft used all-nuclear electrical power. Pioneer 11 was similar to Pioneer 10, but instead aimed to study Saturn up close. This was also successful, and 
+              it is also on a trajectory to go outside the Solar System. Both Pioneer missions mentioned, similar to the two Voyager missions' Gold Record, contain a plaque to identify them if they are rediscovered by humans or aliens in the future.
+              
+            </p></div>
+            <div class="mission_info" id="galileo_info"><h2>Galileo</h2><p>
+              <b style="color:yellow">Galileo (Yellow Path)</b><br>
+              Launch Date: October 18, 1989, 16:53:40 UTC<br>
+              Mission Duration: 13 years, 11 months, 3 days<br>
+              Manufacturers: Jet Propulsion Laboratory, Messerschmitt-Bölkow-Blohm, General Electric, Hughes Aircraft Company<br>
+              Power (at launch): 570 watts<br>
+              Launch Rocket: Space Shuttle Atlantis STS-34/IUS<br>
+              ------------------<br>
+              Galileo is unique in this list in that it not only flew past but also orbited Jupiter. This allowed it to make reports for almost 8 years on Jupiter and its surroundings, even sending a probe deep into its atmosphere. This probe took readings of Jupiter for 
+              almost an hour before being crushed by the pressure. The rather strange, elliptical flight path of Galileo on its way to Jupiter is mainly due to its need to gain speed by orbiting the Sun before it had enough momentum to all wit to finally reach Jupiter. Galileo was 
+              also lucky enough to make the only direct observation of a comet colliding with a planet's surface humans have made so far.
+            </p></div>
+          </div>
+          <br>
+          <a href="quiz.html"><button class="next">Next Page: Quiz</button></a>
+        </div>
+      </div>
+      <footer>
+        <h4>An Oliver Healey Project</h4>
+      </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

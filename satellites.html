@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Solar System: Satellites</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Lalezar&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <svg width="80" height="80" viewBox="-40 -40 80 80">
+          <circle fill="#7deb7d" r="8"/>
+          <circle fill="transparent" stroke="#7deb7d" r="15"/>
+          <circle fill="transparent" stroke="#7deb7d" r="25"/>
+          <circle fill="transparent" stroke="#7deb7d" r="35"/>
+          <g>
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" dur="2s" repeatCount="indefinite"/>            
+            <g transform="translate(0, 15)">
+              <circle fill="#7deb7d" r="4"/>
+            </g>
+          </g>
+          <g>
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="360" dur="3s" repeatCount="indefinite"/>            
+            <g transform="translate(0, 25)">
+              <circle fill="#7deb7d" r="4"/>
+            </g>
+          </g>
+          <g>
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" dur="1.5s" repeatCount="indefinite"/>            
+            <g transform="translate(0, 35)">
+              <circle fill="#7deb7d" r="4"/>
+            </g>
+          </g>
+        </svg>
+        <h1><a class="title" href="index.html">The Solar System</a></h1>
+      </header>
+      <div class="main">
+        <div class="menu">
+
+          <links>
+            <a href="history.html" class="link_menu"><img src="images/history_symbol.svg"> History</a>
+            <br>
+            <a href="planets.html" class="link_menu"><img src="images/planet_symbol.svg"> Planets</a>
+            <br>
+            <a class="link_menu_open"><img src="images/satellites_symbol.svg"> Satellites</a>
+            <br>
+            <a href="missions.html" class="link_menu"><img src="images/moons_symbol.svg"> Missions</a>
+            <br>
+            <a href="quiz.html" class="link_menu"><img src="images/quiz_symbol.svg"> Quiz</a>
+          </links>
+
+        </div>
+        <div class="content" id="content_scroller">
+          <h2>Artificial Satellites</h2>
+          <p>Humans have made many satellites orbiting Earth and other celestial bodies that have been created for various purposes. Here are some of the most famous and important ones:</p>
+
+          <div class="satellite" id="0" style="display: block;">
+            <button onclick="prevMenu('0')" class="change_view_prev">Prev</button><button onclick="nextMenu('0')" class="change_view_next">Next</button>
+            <img src="images/Sputnik.jpg">
+            <h3>Sputnik I</h3>
+            <p>Sputnik I was the first man-made object to reach low Earth orbit.<br>
+            It was created by <u>the Soviet Union</u> and was launched on <u>4 October 1957</u>.<br>
+            Its successful launch marked the beginning of the Space Age and the "Race for Space", a race between the Soviet Union and USA to be the first country to land people on the moon.<br>
+            As it orbited, it produced radio waves to communicate with the Soviet space prgram on the ground, which were also interpreted by NASA into a now famous series of beeps:<br>
+            <audio controls>
+              <source src="sounds/sputnik-beep.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio><br>
+
+            The name "Sputnik" translates to "co-wayfarer".
+          </p>
+            <p><b style="color: #7d7d7d">Orbit Path around Earth (Speed and distance from Earth is approximately to scale):</b></p>
+            <svg width="500" height="500" viewBox="-250 -250 500 500"><circle r="120" fill="blue"/><circle r="132" fill="transparent" stroke="#7deb7d"/><g><animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" dur="1.6s" repeatCount="indefinite"/><g transform="translate(0, 132)"><circle fill="#7deb7d" r="5"/></g></g></svg>
+            <p>3600x speed</p>
+            <button onclick="prevMenu('0')" class="change_view_prev">Prev</button><button onclick="nextMenu('0')" class="change_view_next">Next</button>
+          </div>
+
+          <div class="satellite" id="1" style="display: none;">
+            <button onclick="prevMenu('1')" class="change_view_prev">Prev</button><button onclick="nextMenu('1')" class="change_view_next">Next</button>
+            <img src="images/iss.jpg">
+            <h3>International Space Station</h3>
+            <p>The International Space Station, or ISS for short, is the <u>largest space station to ever orbit Earth</u>. It consists of <u>16 modules</u> that were lionked togther in space <u>over 10 years</u> to form one station. <br>
+              It was made with the <u>collabrative effort of 5 space agencies</u> that represented 15 countries.<br>
+              It is used as a research facility to find out more about our planet and space.
+            </p>
+            <p><b style="color: #7d7d7d">Orbit Path around Earth (Speed and distance from Earth is approximately to scale):</b></p>
+            <svg width="500" height="500" viewBox="-250 -250 500 500"><circle r="120" fill="blue"/><circle r="128" fill="transparent" stroke="#7deb7d"/><g><animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" dur="1.5s" repeatCount="indefinite"/><g transform="translate(0, 128)"><circle fill="#7deb7d" r="5"/></g></g></svg>
+            <p>3600x speed</p>
+            <button onclick="prevMenu('1')" class="change_view_prev">Prev</button><button onclick="nextMenu('1')" class="change_view_next">Next</button>
+          </div>
+
+          <div class="satellite" id="2" style="display: none;">
+            <button onclick="prevMenu('2')" class="change_view_prev">Prev</button><button onclick="nextMenu('2')" class="change_view_next">Next</button>
+            <img src="images/hubble.jpg">
+            <h3>Hubble Space Telescope</h3>
+            <p>The Hubble Space Telescope is one of the largest and <u>most versatile space telescopes ever created</u>. Its instruments can observe ultraviolet, visible and near-infrared light to <u>create images of deep space.</u><br>
+            Unlike normal telescopes, space telescopes have the advantage of not having to see through Earth's atmosphere, allowing them to create images of galaxies and stars <u>billions of light-years away</u>.</p>
+            <p><b style="color: #7d7d7d">Orbit Path around Earth (Speed and distance from Earth is approximately to scale):</b></p>
+            <svg width="500" height="500" viewBox="-250 -250 500 500"><circle r="120" fill="blue"/><circle r="128" fill="transparent" stroke="#7deb7d"/><g><animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" dur="1.55s" repeatCount="indefinite"/><g transform="translate(0, 128)"><circle fill="#7deb7d" r="5"/></g></g></svg>
+            <p>3600x speed</p>
+            <button onclick="prevMenu('2')" class="change_view_prev">Prev</button><button onclick="nextMenu('2')" class="change_view_next">Next</button>
+          </div>
+
+          <div class="satellite" id="3" style="display: none;">
+            <button onclick="prevMenu('3')" class="change_view_prev">Prev</button><button onclick="nextMenu('3')" class="change_view_next">Next</button>
+            <img src="images/webb.jpg">
+            <h3>James Webb Telescope</h3>
+            <p>
+              The James Webb Telescope is the <u>largest human-made optical telescope in space</u>, which <u>uses infrared</u> to capture images of deep space using high-resolution and high-sensitivty instruments that allows it to take images of objects the Hubble telescope was unble to see. <br>
+              Unlike the other satellites mentioned, Webb does not orbit the earth, but instead <u>orbits the Sun</u>. This means that it is not in the shadow of the moon at any time, and so can be constantly scanning the universe.<br>
+              It orbits the sun at approximately 151.5 million km, <u>or 1.5 million km further from the Sun than Earth</u>. It also stays in line with Earth as it orbits the sun to help protect it from the light and heat from the Sun.
+            </p>
+            <p><b style="color: #7d7d7d">Orbit Path around the Sun (Speed and distance from the Sun is approximately to scale, and yes, the sun is that tiny yellow pixel in the middle):</b></p>
+            <svg width="500" height="500" viewBox="-250 -250 500 500"><circle r="0.58" fill="yellow"/><circle r="126.25" fill="transparent" stroke="#7deb7d"/><g><animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" dur="4320s" repeatCount="indefinite"/><g transform="translate(0, 126.25)"><circle fill="#7deb7d" r="5"/></g></g></svg>
+            <p>3600x speed</p>
+            <button onclick="prevMenu('3')" class="change_view_prev">Prev</button><button onclick="nextMenu('3')" class="change_view_next">Next</button>
+          </div>
+
+          <br>
+
+          <a href="missions.html"><button class="next">Next Page: Missions</button></a>
+          <p>Images on this page were sourced from: <br> <a href="https://commons.wikimedia.org">commons.wikimedia.org</a>
+            Audio sourced from: <br> <a href="https://history.nasa.gov/sputnik.html">history.nasa.gov</a>
+          </p>
+        </div>
+      </div>
+      <footer>
+        <h4>An Oliver Healey Project</h4>
+      </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
